@@ -1,0 +1,37 @@
+{
+  "name": "hangmangame",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BartoszBuko/beatthathangman.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BartoszBuko/beatthathangman/issues"
+  },
+  "homepage": "https://github.com/BartoszBuko/beatthathangman#readme",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "body-parser": "^1.20.0",
+    "cheerio": "^1.0.0-rc.10",
+    "dotenv": "^16.0.0",
+    "ejs": "^3.1.7",
+    "express": "^4.17.3",
+    "express-router": "^0.0.1",
+    "mongodb": "^4.5.0",
+    "mongoose": "^6.3.1",
+    "nodemon": "^2.0.15"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13"
+  },
+  "engines": {
+    "node": "17.9.0"
+  }
+}

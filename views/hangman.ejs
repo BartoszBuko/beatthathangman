@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Hangman Game</title>
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      Lives remaining: <span data-lives class="blue-bold-text">10</span>
+    </header>
+    <main class="word-container">
+      <div class="category" data-cat-container>
+        Category: <span class="blue-bold-text" data-category></span>
+      </div>
+      <div class="word-letter-container" data-word></div>
+    </main>
+    <article class="letter-container">
+      <div class="letter" data-letter>A</div>
+      <div class="letter" data-letter>B</div>
+      <div class="letter" data-letter>C</div>
+      <div class="letter" data-letter>D</div>
+      <div class="letter" data-letter>E</div>
+      <div class="letter" data-letter>F</div>
+      <div class="letter" data-letter>G</div>
+      <div class="letter" data-letter>H</div>
+      <div class="letter" data-letter>I</div>
+      <div class="letter" data-letter>J</div>
+      <div class="letter" data-letter>K</div>
+      <div class="letter" data-letter>L</div>
+      <div class="letter" data-letter>M</div>
+      <div class="letter" data-letter>N</div>
+      <div class="letter" data-letter>O</div>
+      <div class="letter" data-letter>P</div>
+      <div class="letter" data-letter>Q</div>
+      <div class="letter" data-letter>R</div>
+      <div class="letter" data-letter>S</div>
+      <div class="letter" data-letter>T</div>
+      <div class="letter" data-letter>U</div>
+      <div class="letter" data-letter>V</div>
+      <div class="letter" data-letter>W</div>
+      <div class="letter" data-letter>X</div>
+      <div class="letter" data-letter>Y</div>
+      <div class="letter" data-letter>Z</div>
+    </article>
+    <script type="text/javascript">
+      let words = `<%- JSON.stringify(words) %>`;
+
+      words = JSON.parse(words);
+    </script>
+  </body>
+</html>
