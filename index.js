@@ -7,19 +7,17 @@ const port = process.env.PORT || 8080;
 require("dotenv").config();
 
 const Schema = mongoose.Schema;
-
 let wordsSchema = new Schema({
   words: Array,
 });
+
 try {
-  mongoose
-    .connect(process.env.MONGODB_URI, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    })
-    .then(() => console.log("connected to mongo db"));
+  mongoose.connect(process.env.MONGODB_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  });
 } catch (error) {
-  console.log("connection failed");
+  console.eror(error);
 }
 
 app.set("view engine", "ejs");
