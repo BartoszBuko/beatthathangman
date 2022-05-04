@@ -41,7 +41,7 @@ async function checkForMatch(letterToCheck, letterDiv) {
   const wordToIterate = getWord[0].split("");
   let found = false;
   wordToIterate.forEach((letter, index) => {
-    if (letter === letterToCheck) {
+    if (letter.toLowerCase() === letterToCheck) {
       updateLetter(letter, index, true);
       found = true;
       letterDiv.classList.add("correct");
